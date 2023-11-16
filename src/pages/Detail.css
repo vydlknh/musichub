@@ -1,0 +1,8 @@
+.editButton {
+  width: 30px;
+  float:right;
+
+}
+.editButton:hover {
+  cursor: pointer;
+}
