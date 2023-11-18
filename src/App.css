@@ -1,5 +1,5 @@
 .App {
-  font-family:Avenir, "Century Gothic", sans-serif;
+  font-family:'Times New Roman', Times, serif;
   font-weight:100; 
   font-style:normal;
   font-size: calc(10px + 2vmin);
@@ -14,10 +14,29 @@
   justify-content: center;
 }
 
-.header{
+a:link { text-decoration: none; color: inherit;}
+
+
+a:visited { text-decoration: none; color: inherit;}
+
+
+a:hover { text-decoration: none; color: inherit;}
+
+
+a:active { text-decoration: none; color: inherit;}
+
+.header {
   width: 100%;
   color:black;
   text-align: center;
+}
+
+.header li {
+  display: inline;
+}
+
+.header h1 {
+  list-style-type: none;
 }
 
 .headerBtn {
@@ -25,12 +44,6 @@
   margin-right: 10px;
 }
 
-.ReadPosts {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
 
 button {
   border-radius: 8px;

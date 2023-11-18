@@ -12,13 +12,11 @@ const CreatePost = () => {
       .insert({
         title: formData.current[0].value,
         content: formData.current[1].value, 
-        song: formData.current[2].value
+        song: formData.current[2].value,
+        created_at: new Date()
       })
       .select();
-      console.log(formData.current[0].value);
-      console.log(formData.current[1].value);
-      console.log(formData.current[2].value);
-    // window.location = "/"
+    window.location = "/"
   }
 
   return (
@@ -27,10 +25,10 @@ const CreatePost = () => {
         <input type="text" id="title" name="title" placeholder='Title' /><br />
         <br/>
         
-        <input type="text" id="content" name="content" placeholder='Content' /><br />
+        <textarea id="content" name="content" rows={10} cols={70} placeholder='Content' /><br />
         <br/>
 
-        <input type="text" id="song" name="song" placeholder='Spotify song URL' /><br />
+        <input type="text" id="song" name="song" placeholder='Image URL (optional)' /><br />
         <br/>
 
         <input type="submit" value="Submit" onClick={createPost} />

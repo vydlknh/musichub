@@ -12,7 +12,7 @@ const PostDetail = ({data}) => {
   return (
     <div>
       <Link to={'/edit/'+ post[0].id}><img className="editButton" alt="edit button" src={edit} /></Link>
-      <Detail id={post[0].id} created_at={post[0].created_at} title={post[0].title} content={post[0].content} song={post[0].song} upvotes={post[0].upvotes}/>
+      <Detail id={post[0].id} created_at={post[0].created_at} title={post[0].title} content={post[0].content} song={post[0].song} upvotes={post[0].upvotes} comments={post[0].comments}/>
     </div>
   );
 };

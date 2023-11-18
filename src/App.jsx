@@ -32,7 +32,6 @@ const App = () => {
       element :<PostDetail data ={posts}/>
     }
   ]);
-  
     
   useEffect(() => {
     fetchPost();
@@ -41,17 +40,15 @@ const App = () => {
   const fetchPost = async () => {
     const {data} = await supabase
       .from('Posts')
-      .select()
-      .order('created_at', {ascending: true}); //order data based on 'created at' column in ascending order
+      .select(); //order data based on 'created at' column in ascending order
     setPosts(data)
   }
 
   return ( 
 
     <div className="App">
-
       <div className="header">
-        <h1>MusicHub</h1>
+        <Link to="/"><h1>MusicHub</h1></Link>
         <Link to="/"><button className="headerBtn"> Home </button></Link>
         <Link to="/new"><button className="headerBtn"> Create New Post </button></Link>
       </div>

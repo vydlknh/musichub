@@ -6,8 +6,11 @@
   padding-bottom: 20px;
   padding-right: 10px;
   margin-bottom: 25px;
-  width: 400px;
-  text-align: center;
+  width: 80vw;
+}
+
+.content {
+  padding-left: 50px;
 }
 
 .name {
@@ -30,7 +33,7 @@ h4 {
 .editButton {
   width: 20px;
   float:right;
-
+  padding-right: 50px;
 }
 .editButton:hover {
   cursor: pointer;

@@ -21,7 +21,7 @@ const Detail = (props) =>  {
         <h1 className="title">{props.title}</h1>
         <p>Created on {props.created_at}</p>
         <p>{props.content}</p>
-        <p>{props.song}</p>
+        <img src={props.song} className='image'></img>
         <p>{upvotes} upvotes</p>
         <button className="upvotes" onClick={updateUpvotes}>Upvote</button>
       </div>

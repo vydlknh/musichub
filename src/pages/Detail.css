@@ -6,3 +6,7 @@
 .editButton:hover {
   cursor: pointer;
 }
+
+.image {
+  max-width: 500px;
+}
